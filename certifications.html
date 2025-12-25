@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certifications | Heramb Kondhare</title>
+
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <link rel="stylesheet" href="assets/css/johndoe.css" />
+
+    <style>
+      /* ================= CERTIFICATIONS ================= */
+
+      .cert-section {
+        padding: 80px 20px;
+        max-width: 1100px;
+        margin: auto;
+      }
+
+      .cert-title {
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 50px;
+      }
+
+      .cert-title span {
+        color: #ff5a5f;
+      }
+
+      .cert-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 30px;
+      }
+
+      .cert-card {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        overflow: hidden;
+        transition: transform 0.3s ease;
+      }
+
+      .cert-card:hover {
+        transform: translateY(-6px);
+      }
+
+      .cert-image {
+        background: #f5f5f5;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .cert-image img {
+        max-width: 100%;
+        height: 220px;
+        object-fit: contain;
+        cursor: pointer;
+        border-radius: 6px;
+      }
+
+      .cert-body {
+        padding: 20px;
+      }
+
+      .cert-body h4 {
+        margin-bottom: 10px;
+      }
+
+      .cert-meta {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 10px;
+      }
+
+      .cert-tags {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+      }
+
+      .cert-tag {
+        background: #ffe5e7;
+        color: #ff5a5f;
+        padding: 6px 12px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: 600;
+      }
+
+      .cert-actions {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      .btn-cert {
+        padding: 10px 18px;
+        border-radius: 6px;
+        font-size: 14px;
+        text-decoration: none;
+        cursor: pointer;
+        border: 1px solid #ff5a5f;
+        color: #ff5a5f;
+        background: transparent;
+        transition: 0.3s;
+      }
+
+      .btn-cert:hover {
+        background: #ff5a5f;
+        color: #fff;
+      }
+
+      /* ===== MODAL ===== */
+      .cert-modal {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.85);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+      }
+
+      .cert-modal.active {
+        display: flex;
+      }
+
+      .cert-modal img {
+        max-width: 90%;
+        max-height: 90%;
+        border-radius: 8px;
+        background: #fff;
+        padding: 10px;
+      }
+
+      .cert-modal .close-btn {
+        position: absolute;
+        top: 25px;
+        right: 30px;
+        font-size: 32px;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      @media (max-width: 600px) {
+        .cert-title {
+          font-size: 28px;
+        }
+      }
+
+      html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  flex: 1;
+}
+
+/* Footer stays at bottom */
+footer.footer {
+  margin-top: auto;
+}
+    </style>
+  </head>
+
+  <body>
+    <!-- NAVBAR (reuse your existing navbar) -->
+    <header class="main-navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="index.html">Heramb Kondhare</a>
+        </div>
+
+        <button class="nav-toggle" id="navToggle">☰</button>
+
+        <ul class="nav-links" id="navMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li>
+            <a href="certifications.html" class="active">Certifications</a>
+          </li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="featured.html">Featured</a></li>
+          <li><a href="languages.html">Language Expertise</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- ================= CERTIFICATIONS SECTION ================= -->
+    <section class="cert-section">
+      <h2 class="cert-title">Professional <span>Certifications</span></h2>
+
+      <div class="cert-grid">
+        <!-- CERTIFICATE CARD -->
+        <div class="cert-card">
+          <div class="cert-image">
+            <img
+              src="assets/imgs/exlearn-cloud-devops.jpg"
+              alt="Cloud & DevOps Certificate"
+              onclick="openCert(this.src)"
+            />
+          </div>
+
+          <div class="cert-body">
+            <h4>Cloud & DevOps Mastery</h4>
+            <div class="cert-meta">
+              Issued by <b>Exlearn Technologies</b> • Sep 2025
+            </div>
+
+            <div class="cert-tags">
+              <span class="cert-tag">Linux</span>
+              <span class="cert-tag">Cloud</span>
+              <span class="cert-tag">DevOps</span>
+              <span class="cert-tag">Networking</span>
+            </div>
+
+            <div class="cert-actions">
+              <button
+                class="btn-cert"
+                onclick="openCert('assets/imgs/exlearn-cloud-devops.jpg')"
+              >
+                View Certificate
+              </button>
+
+              <a
+                class="btn-cert"
+                href="assets/imgs/exlearn-cloud-devops.jpg"
+                target="_blank"
+              >
+                Download
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMAGE MODAL -->
+    <div class="cert-modal" id="certModal">
+      <span class="close-btn" onclick="closeCert()">×</span>
+      <img id="certModalImg" src="" alt="Certificate Preview" />
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer py-3">
+        <div class="container">
+            <p class="small mb-0 text-light">
+                &copy; <script>document.write(new Date().getFullYear())</script> Developed & Maintained by Heramb Kondhare. All Rights Reserved.</span></a> 
+            </p>
+        </div>
+    </footer>
+
+    <script>
+      function openCert(src) {
+        document.getElementById("certModalImg").src = src;
+        document.getElementById("certModal").classList.add("active");
+      }
+
+      function closeCert() {
+        document.getElementById("certModal").classList.remove("active");
+      }
+    </script>
+    <script>
+      const toggle = document.getElementById("navToggle");
+      const menu = document.getElementById("navMenu");
+
+      toggle.addEventListener("click", () => {
+        menu.classList.toggle("show");
+      });
+    </script>
+  </body>
+</html>

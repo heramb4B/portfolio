@@ -24,7 +24,27 @@
     />
     <!-- Bootstrap + JohnDoe main styles -->
     <link rel="stylesheet" href="assets/css/johndoe.css" />
-    <style></style>
+    <style>
+      /* ===== Sticky Footer Fix ===== */
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  flex: 1;
+}
+
+/* Footer stays at bottom */
+footer.footer {
+  margin-top: auto;
+}
+
+    </style>
   </head>
 
   <body>
@@ -40,6 +60,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="experience.html">Experience</a></li>
           <li><a href="education.html" >Education</a></li>
+          <li><a href="certifications.html">Certifications</a></li>
           <li><a href="projects.html" >Projects</a></li>
           <li><a href="featured.html" >Featured</a></li>
           <li><a href="languages.html">Language Expertise</a></li>
