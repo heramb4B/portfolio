@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Featured</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Welcome to Heramb Kondhare's Portfolio."
+    />
+    <meta name="author" content="Devcrud" />
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <!-- font icons -->
+    <link
+      rel="stylesheet"
+      href="assets/vendors/themify-icons/css/themify-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- Bootstrap + JohnDoe main styles -->
+    <link rel="stylesheet" href="assets/css/johndoe.css" />
+    <style>
+              .github-preview {
+        background-image: url("assets/imgs/github-preview.png");
+      }
+
+      .postman-preview {
+        background-image: url("assets/imgs/postman-preview.png");
+      }
+
+      .linkedin-preview {
+        background-image: url("assets/imgs/linkedin-preview.png");
+      }
+
+    </style>
+  </head>
+  <body>
+    <header class="main-navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="index.html">Heramb Kondhare</a>
+        </div>
+
+        <button class="nav-toggle" id="navToggle">☰</button>
+
+        <ul class="nav-links" id="navMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="education.html" >Education</a></li>
+          <li><a href="projects.html" >Projects</a></li>
+          <li><a href="featured.html" class="active">Featured</a></li>
+          <li><a href="languages.html">Language Expertise</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- Featured Section -->
+
+    <section class="section bg-custom-gray" id="featured" style="margin-top: 2%;">
+      <div class="container">
+        <h2 class="mb-5 text-center">
+          <span class="text-danger">Featured</span> Work
+        </h2>
+
+        <div class="row justify-content-center">
+          <!-- GitHub Preview -->
+          <div class="col-md-6 col-lg-5 mb-4">
+            <a
+              href="https://github.com/heramb4B"
+              target="_blank"
+              rel="noopener"
+              class="preview-card"
+            >
+              <div class="preview-img github-preview">
+                <div class="preview-overlay">
+                  <h4>GitHub Profile</h4>
+                  <p>Code · Projects · Open Source</p>
+                  <span class="preview-cta">View on GitHub →</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- The Postman Preview -->
+          <div class="col-md-6 col-lg-5 mb-4">
+            <a
+              href="https://thepostman.co.in/author/heramb/"
+              target="_blank"
+              rel="noopener"
+              class="preview-card"
+            >
+              <div class="preview-img postman-preview">
+                <div class="preview-overlay">
+                  <h4>The Postman</h4>
+                  <p>300+ Published Marathi Articles</p>
+                  <span class="preview-cta">Read Articles →</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Linkedin Preview -->
+          <div class="col-md-6 col-lg-5 mb-4">
+            <a
+              href="https://www.linkedin.com/in/heramb-k/"
+              target="_blank"
+              rel="noopener"
+              class="preview-card"
+            >
+              <div class="preview-img linkedin-preview">
+                <div class="preview-overlay">
+                  <h4>LinkedIn Profile</h4>
+                  <p>Professional Network & Career</p>
+                  <span class="preview-cta">View Profile →</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End of Featured Section -->
+
+                 <footer class="footer py-3">
+        <div class="container">
+            <p class="small mb-0 text-light">
+                &copy; <script>document.write(new Date().getFullYear())</script> Developed & Maintained by Heramb Kondhare. All Rights Reserved.</span></a> 
+            </p>
+        </div>
+    </footer>
+
+        <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Isotope  -->
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+
+    <!-- Google mpas -->
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"
+    ></script>
+
+    <!-- JohnDoe js -->
+    <script src="assets/js/johndoe.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const projects = document.querySelectorAll(".project-item");
+        const loadMoreBtn = document.getElementById("loadMoreProjects");
+
+        const INITIAL_COUNT = 3;
+
+        // Show first 3 projects
+        projects.forEach((project, index) => {
+          if (index < INITIAL_COUNT) {
+            project.classList.add("visible");
+          }
+        });
+
+        loadMoreBtn.addEventListener("click", function () {
+          projects.forEach((project) => {
+            project.classList.add("visible");
+          });
+
+          // Hide button after loading
+          loadMoreBtn.style.display = "none";
+        });
+      });
+    </script>
+
+    </script>
+    <script>
+  const toggle = document.getElementById("navToggle");
+  const menu = document.getElementById("navMenu");
+
+  toggle.addEventListener("click", () => {
+    menu.classList.toggle("show");
+  });
+</script>
+  </body>
+</html>

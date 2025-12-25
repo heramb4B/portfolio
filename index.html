@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Welcome to Heramb Kondhare's Portfolio."
+    />
+    <meta name="author" content="Devcrud" />
+    <title>Heramb M. Kondhare</title>
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <!-- font icons -->
+    <link
+      rel="stylesheet"
+      href="assets/vendors/themify-icons/css/themify-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- Bootstrap + JohnDoe main styles -->
+    <link rel="stylesheet" href="assets/css/johndoe.css" />
+    <style>
+
+    </style>
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <!-- <a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-shift-left-alt"></i> Components</a> -->
+   <header class="main-navbar">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <a href="index.html">Heramb Kondhare</a>
+    </div>
+
+    <button class="nav-toggle" id="navToggle">
+      ☰
+    </button>
+
+    <ul class="nav-links" id="navMenu">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="experience.html" >Experience</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="featured.html">Featured</a></li>
+      <li><a href="languages.html" >Language Expertise</a></li>
+      <li><a href="contact.html" >Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+
+
+    <header class="header header1">
+      <div class="container">
+        <ul class="social-icons pt-3">
+          <li class="social-item">
+            <a
+              class="social-link text-light"
+              href="https://www.linkedin.com/in/heramb-kondhare/"
+              ><i class="ti-linkedin" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li class="social-item">
+            <a class="social-link text-light" href="https://github.com/heramb4B"
+              ><i class="ti-github" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li class="social-item">
+            <a
+              class="social-link text-light"
+              href="mailto:herambk812@gmail.com?body=Hi Heramb, "
+              target="_blank"
+              ><i class="ti-email" aria-hidden="true"></i
+            ></a>
+          </li>
+        </ul>
+        <div class="header-content">
+          <!-- <h4 class="header-subtitle" >Hello, I am</h4> -->
+          <h1 class="header-title">Heramb Kondhare</h1>
+          <h6 class="header-mono">LINUX && HPC ADMINISTRATOR</h6>
+          <button
+            class="btn btn-primary btn-rounded"
+            onclick="downloadResume()"
+          >
+            <i class="ti-printer pr-2"></i>Download Resume
+          </button>
+        </div>
+      </div>
+    </header>
+    
+    <div class="container-fluid">
+      <div id="about" class="row about-section">
+        <div class="col-lg-4 about-card">
+          <h3 class="font-weight-light">Who am I ?</h3>
+          <span class="line mb-5"></span>
+          <h5 class="mb-3">Linux & HPC Administrator</h5>
+          <p class="mt-20">
+            I am a <b>Linux System Administrator</b> specializing in
+            <b>High-Performance Computing (HPC)</b>, with hands-on experience in
+            managing Linux servers, enterprise systems, and HPC clusters,
+            ensuring reliability, performance, and scalability.
+            <br /><br />Alongside my primary expertise in system administration,
+            I possess strong secondary experience in <b>Web Development</b>,
+            building dynamic and responsive web applications using
+            <b>JavaScript, Node.js, React.js, MySQL, and EJS</b>. This technical
+            versatility allows me to bridge infrastructure and application
+            layers effectively. <br /><br />In addition to my technical
+            background, I am an accomplished <b>Marathi content writer</b> with
+            <b>300+ published articles</b>, combining analytical thinking with
+            clear, impactful communication.
+          </p>
+          <button class="btn btn-outline-danger" onclick="downloadResume()">
+            <i class="icon-down-circled2"></i>Download My CV
+          </button>
+        </div>
+        <div class="col-lg-4 about-card">
+          <h3 class="font-weight-light">Personal Info</h3>
+          <span class="line mb-5"></span>
+          <ul class="mt40 info list-unstyled">
+            <li style="color: black">
+              <span style="color: black">Birthdate</span> : 24/05/2000
+            </li>
+            <li style="color: black">
+              <span>Email</span> :
+              <a
+                href="mailto:herambk812@gmail.com"
+                style="color: black; text-decoration: none"
+                >herambk812@gmail.com</a
+              >
+            </li>
+            <li style="color: black">
+              <span>Phone</span> :
+              <a
+                href="tel:+918999166623"
+                style="color: black; text-decoration: none"
+                >+91 8999166623</a
+              >
+            </li>
+            <!-- <li><span>Skype</span> : John_Doe </li> -->
+            <li style="color: black">
+              <span>Location</span> : Pune, Maharashtra
+            </li>
+          </ul>
+          <ul class="social-icons pt-3">
+            <li class="social-item">
+              <a
+                class="social-link"
+                href="https://www.linkedin.com/in/heramb-kondhare/"
+                ><i class="ti-linkedin" aria-hidden="true"></i
+              ></a>
+            </li>
+            <!-- <li class="social-item"><a class="social-link" href="#"><i class="ti-twitter" aria-hidden="true"></i></a></li> -->
+            <!-- <li class="social-item"><a class="social-link" href="#"><i class="ti-google" aria-hidden="true"></i></a></li> -->
+            <!-- <li class="social-item"><a class="social-link" href="#"><i class="ti-instagram" aria-hidden="true"></i></a></li> -->
+            <li class="social-item">
+              <a class="social-link" href="https://github.com/heramb4B"
+                ><i class="ti-github" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="mailto:herambk812@gmail.com"
+                ><i class="ti-email" aria-hidden="true"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4 about-card">
+          <h3 class="font-weight-light">My Expertise</h3>
+          <span class="line mb-5"></span>
+          <div class="row">
+            <!-- <div class="col-1 text-danger pt-1"><i class="ti-widget icon-lg"></i></div> -->
+            <!-- <div class="col-10 ml-auto mr-3">
+                        <h6>UX Design</h6>
+                        <p class="subtitle"> exercitat Repellendus,  corrupt.</p>
+                        <hr>
+                    </div> -->
+          </div>
+          <div class="row">
+            <div class="col-1 text-danger pt-1">
+              <i class="fa-solid fa-server"></i>
+            </div>
+            <div class="col-10 ml-auto mr-3">
+              <h6>Linux & HPC</h6>
+              <p class="subtitle">Since Sept 2025</p>
+              <hr />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1 text-danger pt-1">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <div class="col-10 ml-auto mr-3">
+              <h6>Web Development</h6>
+              <p class="subtitle">3 Years of Experience.</p>
+              <hr />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1 text-danger pt-1">
+              <i class="fa-solid fa-pen-fancy"></i>
+            </div>
+            <div class="col-10 ml-auto mr-3">
+              <h6>Content Writing</h6>
+              <p class="subtitle">Over 3+ years of Experience.</p>
+              <hr />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <section class="section bg-dark text-center">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-6 col-lg-3">
+                    <div class="row ">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><i class="ti-alarm-clock icon-xl"></i></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h1 class="text-danger font-weight-bold font40">500</h1>
+                            <p class="text-light mb-1">Hours Worked</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="row">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><i class="ti-layers-alt icon-xl"></i></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h1 class="text-danger font-weight-bold font40">50K</h1>
+                            <p class="text-light mb-1">Project Finished</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="row">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><i class="ti-face-smile icon-xl"></i></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h1 class="text-danger font-weight-bold font40">200K</h1>
+                            <p class="text-light mb-1">Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="row">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><i class="ti-heart-broken icon-xl"></i></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h1 class="text-danger font-weight-bold font40">2k</h1>
+                            <p class="text-light mb-1">Coffee Drinked</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- <section class="section" id="service">
+        <div class="container">
+            <h2 class="mb-5 pb-4"><span class="text-danger">My</span> Services</h2>
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                            <i class="ti-vector text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Ullam</h5>
+                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                            <i class="ti-write text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Asperiores</h5>
+                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                            <i class="ti-package text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Tempora</h5>
+                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                            <i class="ti-map-alt text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Provident</h5>
+                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                            <i class="ti-bar-chart text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Consectetur</h5>
+                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                            <i class="ti-support text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Veritatis</h5>
+                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- <section class="section bg-custom-gray" id="price">
+        <div class="container">
+            <h1 class="mb-5"><span class="text-danger">Packs</span> Pricing</h1>
+            <div class="row align-items-center">
+                <div class="col-md-6 col-lg-3">
+                    <div class="price-card text-center mb-4">
+                        <h3 class="price-card-title">Free</h3>
+                        <div class="price-card-cost">
+                            <sup class="ti-money"></sup>
+                            <span class="num">0</span>
+                            <span class="date">MO</span>
+                        </div>
+                        <ul class="list">
+                            <li class="list-item">5 <span class="text-muted">Project</span></li>
+                            <li class="list-item">1GB <span class="text-muted">Storage</span></li>
+                            <li class="list-item"><span class="text-muted">No Domain</span></li>
+                            <li class="list-item">1 <span class="text-muted">User</span></li>
+                        </ul>
+                        <button class="btn btn-primary btn-rounded w-lg">Subscribe</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="price-card text-center mb-4">
+                        <h3 class="price-card-title">Basic</h3>
+                        <div class="price-card-cost">
+                            <sup class="ti-money"></sup>
+                            <span class="num">10</span>
+                            <span class="date">MO</span>
+                        </div>
+                        <ul class="list">
+                            <li class="list-item">50 <span class="text-muted">Project</span></li>
+                            <li class="list-item">10GB <span class="text-muted">Storage</span></li>
+                            <li class="list-item">1<span class="text-muted">Domain</span></li>
+                            <li class="list-item">5 <span class="text-muted">User</span></li>
+                        </ul>
+                        <button class="btn btn-primary btn-rounded w-lg">Subscribe</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="price-card text-center price-card-requried mb-4">
+                        <h3 class="price-card-title">Exclusive</h3>
+                        <div class="price-card-cost">
+                            <sup class="ti-money"></sup>
+                            <span class="num">25</span>
+                            <span class="date">MO</span>
+                        </div>
+                        <ul class="list">
+                            <li class="list-item">150 <span class="text-muted">Project</span></li>
+                            <li class="list-item">15GB <span class="text-muted">Storage</span></li>
+                            <li class="list-item">5<span class="text-muted"> Domain</span></li>
+                            <li class="list-item">15<span class="text-muted">User</span></li>
+                        </ul>
+                        <button class="btn btn-primary btn-rounded w-lg">Subscribe</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="price-card text-center mb-4">
+                        <h3 class="price-card-title">Pro</h3>
+                        <div class="price-card-cost">
+                            <sup class="ti-money"></sup>
+                            <span class="num">99</span>
+                            <span class="date">MO</span>
+                        </div>
+                        <ul class="list">
+                            <li class="list-item">500 <span class="text-muted">Project</span></li>
+                            <li class="list-item">1000GB <span class="text-muted">Storage</span></li>
+                            <li class="list-item">10<span class="text-muted"> Domain</span></li>
+                            <li class="list-item">Unlimite<span class="text-muted">User</span></li>
+                        </ul>
+                        <button class="btn btn-primary btn-rounded w-lg">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- <section class="section bg-dark py-5">
+        <div class="container text-center">
+            <h2 class="text-light mb-5 font-weight-normal">I Am Available For FreeLance</h2>
+            <button class="btn bg-primary w-lg" ><a href="#contact" style="text-decoration: none; color: aliceblue;">Hire me</a></button>
+        </div>
+    </section> -->
+
+    <!-- <section class="section" id="blog"> -->
+    <!-- <div class="container"> -->
+    <!-- <h2 class="mb-5">Latest <span class="text-danger">News</span></h2> -->
+    <!-- <div class="row"> -->
+    <!-- <div class="blog-card">
+                    <div class="img-holder">
+                        <img src="assets/imgs/blog1.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="content-holder">
+                        <h6 class="title">Consectetur adipisicing elit</h6>
+
+                        <p class="post-details">
+                            <a href="#">By: Admin</a>
+                            <a href="#"><i class="ti-heart text-danger"></i> 234</a>
+                            <a href="#"><i class="ti-comment"></i> 123</a>
+                        </p>
+                        
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet nesciunt qui sit velit delectus voluptates, repellat ipsum culpa id deleniti. Rerum debitis facilis accusantium neque numquam mollitia modi quasi distinctio.</p>
+
+                        <p><b>Necessitatibus nihil impedit! Ex nisi eveniet, dolor aliquid consequuntur repudiandae.</b></p>
+                        <p>Magnam in repellat enim harum omnis aperiam! Explicabo illo, commodi, dolor blanditiis cupiditate harum nisi vero accusamus laudantium voluptatibus dolores quae obcaecati.</p>
+
+                        <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
+                    </div>
+                </div> -->
+
+    <!-- end of blog wrapper -->
+
+    <!-- blog-card -->
+    <!-- <div class="blog-card">
+                    <div class="img-holder">
+                        <img src="assets/imgs/blog2.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="content-holder">
+                        <h6 class="title">Explicabo illo</h6>
+
+                        <p class="post-details">
+                            <a href="#">By: Admin</a>
+                            <a href="#"><i class="ti-heart text-danger"></i> 456</a>
+                            <a href="#"><i class="ti-comment"></i> 264</a>
+                        </p>
+                        
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.</p>
+
+                        <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
+                    </div>
+                </div> -->
+
+    <!-- end of blog wrapper -->
+    <!-- blog-card -->
+
+    <!-- <div class="blog-card">
+                    <div class="img-holder">
+                        <img src="assets/imgs/blog3.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="content-holder">
+                        <h4 class="title">Porro Quisqua</h4>
+
+                        <p class="post-details">
+                            <a href="#">By: Admin</a>
+                            <a href="#"><i class="ti-heart text-danger"></i> 431</a>
+                            <a href="#"><i class="ti-comment"></i> 312</a>
+                        </p>
+                        
+                        <p> consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.</p>
+
+                        <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
+                    </div>
+                </div> -->
+    <!-- end of blog wrapper -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- </section> -->
+
+    <!-- <footer class="bg-dark text-light pt-5 pb-3">
+      <div class="container">
+        <div class="row">
+         
+          <div class="col-md-4">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html" class="text-light">Home</a></li>
+              <li><a href="about.html" class="text-light">About</a></li>
+              <li><a href="resume.html" class="text-light">Resume</a></li>
+              <li><a href="projects.html" class="text-light">Projects</a></li>
+              <li><a href="contact.html" class="text-light">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-4">
+            <h5>Connect</h5>
+            <a
+              href="https://www.linkedin.com/in/heramb-kondhare/"
+              class="text-light mr-3"
+            >
+              <i class="ti-linkedin"></i>
+            </a>
+            <a href="https://github.com/heramb4B" class="text-light mr-3">
+              <i class="ti-github"></i>
+            </a>
+            <a href="mailto:herambk812@gmail.com" class="text-light">
+              <i class="ti-email"></i>
+            </a>
+          </div>
+
+        
+          <div class="col-md-4">
+            <h5>Contact Info</h5>
+            <p><i class="ti-mobile"></i> +91 8999166623</p>
+            <p><i class="ti-email"></i> herambk812@gmail.com</p>
+            <p><i class="ti-location-pin"></i> Pune, Maharashtra</p>
+          </div>
+        </div>
+
+        <hr class="bg-secondary" />
+
+        <p class="text-center mb-0">
+          © 2025 Heramb Kondhare. All Rights Reserved.
+        </p>
+      </div>
+    </footer> -->
+
+    <footer class="footer py-3">
+        <div class="container">
+            <p class="small mb-0 text-light">
+                &copy; <script>document.write(new Date().getFullYear())</script> Developed & Maintained by Heramb Kondhare. All Rights Reserved.</span></a> 
+            </p>
+        </div>
+    </footer>
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Isotope  -->
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+
+    <!-- Google mpas -->
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"
+    ></script>
+
+    <!-- JohnDoe js -->
+    <script src="assets/js/johndoe.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const projects = document.querySelectorAll(".project-item");
+        const loadMoreBtn = document.getElementById("loadMoreProjects");
+
+        const INITIAL_COUNT = 3;
+
+        // Show first 3 projects
+        projects.forEach((project, index) => {
+          if (index < INITIAL_COUNT) {
+            project.classList.add("visible");
+          }
+        });
+
+        loadMoreBtn.addEventListener("click", function () {
+          projects.forEach((project) => {
+            project.classList.add("visible");
+          });
+
+          // Hide button after loading
+          loadMoreBtn.style.display = "none";
+        });
+      });
+    </script>
+
+    </script>
+    <script>
+  const toggle = document.getElementById("navToggle");
+  const menu = document.getElementById("navMenu");
+
+  toggle.addEventListener("click", () => {
+    menu.classList.toggle("show");
+  });
+</script>
+  </body>
+</html>
+<script>
+  function downloadResume() {
+    // Replace 'resume.pdf' with the actual file name and path
+    const resumeUrl = "assets/docs/resume.pdf";
+    window.open(resumeUrl, "_blank");
+    //   const link = document.createElement('a');
+    //   link.href = resumeUrl;
+    //   link.download = 'resume.pdf';
+    //   link.click();
+  }
+</script>
+
+<script>
+  function downloadBcsMklist() {
+    // Replace 'resume.pdf' with the actual file name and path
+    const mklistUrl = "bcs.pdf";
+    window.open(mklistUrl, "_blank");
+    //   const link = document.createElement('a');
+    //   link.href = resumeUrl;
+    //   link.download = 'resume.pdf';
+    //   link.click();
+  }
+</script>
+
+<script>
+  function downloadMcsMklist() {
+    // Replace 'resume.pdf' with the actual file name and path
+    const mklistUrl = "mcs.pdf";
+    window.open(mklistUrl, "_blank");
+    //   const link = document.createElement('a');
+    //   link.href = resumeUrl;
+    //   link.download = 'resume.pdf';
+    //   link.click();
+  }
+</script>
+
+<script>
+  function downloadExpLtr1() {
+    // Replace 'resume.pdf' with the actual file name and path
+    const mklistUrl = "exp1.pdf";
+    window.open(mklistUrl, "_blank");
+    //   const link = document.createElement('a');
+    //   link.href = resumeUrl;
+    //   link.download = 'resume.pdf';
+    //   link.click();
+  }
+</script>
+
+<script>
+  function downloadExpLtr2() {
+    // Replace 'resume.pdf' with the actual file name and path
+    const mklistUrl = "exp2.pdf";
+    window.open(mklistUrl, "_blank");
+    //   const link = document.createElement('a');
+    //   link.href = resumeUrl;
+    //   link.download = 'resume.pdf';
+    //   link.click();
+  }
+</script>
